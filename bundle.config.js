@@ -1,4 +1,4 @@
-// bundle.config.js 
+// bundle.config.js
 module.exports = {
   bundle: {
     vendor: {
@@ -7,7 +7,7 @@ module.exports = {
         './bower_components/bootstrap/dist/js/bootstrap.js',
         './bower_components/jquery-sidebar/src/jquery.sidebar.js',
         './bower_components/matchHeight/dist/jquery.matchHeight.js',
-        // './bower_components/owl.carousel/dist/owl.carousel.js',
+        './bower_components/owl.carousel/dist/owl.carousel.js',
         // './bower_components/sticky.js/dist/sticky.js',
         // './bower_components/enquire/dist/enquire.js',
         // './bower_components/elevatezoom/jquery.elevateZoom-2.2.3.js',
@@ -21,8 +21,8 @@ module.exports = {
       styles: [
         './bower_components/bootstrap/dist/css/bootstrap.css',
         './bower_components/slider-pro/dist/css/slider-pro.css',
-        // './bower_components/owl.carousel/dist/assets/owl.carousel.css',
-        // './bower_components/owl.carousel/dist/assets/owl.theme.default.css',
+        './bower_components/owl.carousel/dist/assets/owl.carousel.css',
+        './bower_components/owl.carousel/dist/assets/owl.theme.default.css',
         // './bower_components/pnotify/dist/pnotify.css',
         // './bower_components/pnotify/dist/pnotify.brighttheme.css',
         // './bower_components/iCheck/skins/minimal/minimal.css',
@@ -33,18 +33,19 @@ module.exports = {
         uglify: false,
         minCSS: false,
         rev: false
-      }      
+      }
     },
     main: {
       scripts: [
         './dev/js/**/*.js'
       ],
       styles: [
-      	'./dev/css/style.css'
+      	'./dev/css/style.css',
+        './dev/css/webfont.css'
       ],
       options: {
         rev: false
-      }         
+      }
     }
   },
   copy: [

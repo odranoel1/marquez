@@ -2,6 +2,14 @@ $desktop_size = 1024px
 $tablet_size = 768px
 $phone_size = 320px
 
+//Colors
+$black = #000
+$white = #fff
+$yellow = #d8b878
+$gray = #ece9dd
+$gray-two = #ebebeb
+
+@import "b4.styl"
 @import "Header/style.styl"
 @import "Content/style.styl"
 @import "Footer/style.styl"
@@ -9,8 +17,68 @@ $phone_size = 320px
 body
 	background white
 	font-size 16px
-	font-family 'Open Sans', sans-serif
-		
+	font-family 'Roboto-Condensed', sans-serif
+
+h1
+	font-size 1.5em
+h2
+	font-size 1.4em
+	color $yellow
+h3
+	font-size 1.3em
+h4
+	font-size 1.2em
+h5
+	font-size 1.1em
+p
+	font-size 1em
+ul
+	list-style none
+i, a
+	color $white
+i
+	margin-right 10px
+
+label
+	color #7a7676
+	font-weight normal
+input
+	border transparent !important
+	background-color transparent !important
+	border-bottom 1px solid #908d8d !important
+	border-radius 0 !important
+	box-shadow inset 0 1px 1px rgba(255, 255, 255, 0) !important
+
+.btn
+	font-weight bold
+	&:hover, &:active, &:focus
+		background-color rgba($black, 0.8) !important
+		color $white !important
+	&-link
+		border 1px solid $black
+		color $black
+	&-default
+		background-color $black
+		color $white
+
+.title
+	&-default
+		color $black
+		text-align right
+
+.owl-nav
+	position absolute
+	top 50%
+	width 100%
+	.owl-prev, .owl-next
+		position absolute
+		color $gray
+		font-size 2em !important
+	.owl-prev
+		right 100%
+	.owl-next
+		left 100%
+
 .notify
 	padding 0.8em
 	margin-bottom 1em
@@ -30,7 +98,7 @@ body
 		background #fff6bf
 		color #514721
 		border-color #ffd324
-	
+
 	&.info
 		background #d5edf8
 		color #205791

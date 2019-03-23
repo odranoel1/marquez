@@ -1,0 +1,85 @@
+doctype html
+html(lang="es")
+	head
+		meta(name="charset", charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width')
+		meta(name="title", content="")
+		meta(name="description", content="")
+		meta(name="keywords", content="")
+		meta(name="robots", content="index, follow")
+		meta(name="author", content="http://www.lava.mx")
+		meta(name="distribution", content="global")
+		meta(name="rating" content="general")
+		meta(name="revisit-after" content="14 Days")
+		title
+		link(rel="stylesheet", href="//use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+		link(rel="stylesheet", href="assets/vendor.css")
+		link(rel="stylesheet", href="assets/main.css")
+		link(rel="icon", type="image/png", href="favicon.png")
+
+		script(src="assets/vendor.js")
+		script(src="assets/main.js")
+	body
+		include parts/header.pug
+		
+		.Shipping
+			.container
+				.row
+					.col-sm-6
+						h2 - INFORMACIÓN DE CONTACTO
+						p Correo
+						a(href="") ejemplo@gmail.com
+						p Dirección
+						a(href="") Donato Guerra #1234, Centro, Guadalajara, Jalisco. México
+						span -Recoger en tienda-
+						
+						h2 - MÉTODO DE PAGO
+						form
+							.form-group
+								label Pago con efectivo en oxxo
+								input(type="radio")
+								img(src="")
+								p
+									| Gracias por realizar tu orden. En breve recibirás un correo electrónico con tu referencia
+									| numérica la cual deberás presentar en cualquier sucursal Oxxo del país para realizar tu pago.
+									| Recuerda que Oxxo cobrará una comisión al momento de realizar tu pago.
+							.form-group
+								label Pago con Paypal.
+								input(type="radio")
+								img(src="")
+							.form-group
+								label Depósito bancario o transferencia
+								input(type="radio")
+								img(src="")
+						a(href="purchase.html").btn.btn-link.btn-block FINALIZAR PEDIDO
+					.col-sm-6
+						h2 - RESUMEN DE COMPRA
+						.row
+							.col-sm-4
+								img(src="")
+								p CBA-20403
+							.col-sm-4
+								h3 Camisa Azul botones
+								p
+									| Talla: M
+									| Color: Azul
+									| Piezas: 5
+							.col-sm-4
+								p $2,995.00 MX
+						.row
+							.col-sm-12
+								p Cupón de Descuento
+								input(type="text")
+								button(type="submit").btn.btn-link USAR
+								table.table
+									tr
+										th Sub-total:
+										th MX $8,386.00
+									tr
+										td Envío:
+										td MX $0.00
+									tr
+										td Total:
+										td MX $8,586.00
+		include parts/footer.pug

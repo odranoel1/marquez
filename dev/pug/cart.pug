@@ -1,0 +1,138 @@
+doctype html
+html(lang="es")
+	head
+		meta(name="charset", charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width')
+		meta(name="title", content="")
+		meta(name="description", content="")
+		meta(name="keywords", content="")
+		meta(name="robots", content="index, follow")
+		meta(name="author", content="http://www.lava.mx")
+		meta(name="distribution", content="global")
+		meta(name="rating" content="general")
+		meta(name="revisit-after" content="14 Days")
+		title
+		link(rel="stylesheet", href="//use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+		link(rel="stylesheet", href="assets/vendor.css")
+		link(rel="stylesheet", href="assets/main.css")
+		link(rel="icon", type="image/png", href="favicon.png")
+
+		script(src="assets/vendor.js")
+		script(src="assets/main.js")
+	body
+		include parts/header.pug
+		
+		.Cart
+			.container
+				.row
+					.col-sm-6
+						h2 - RESUMEN DE COMPRA
+					.col-sm-6.text-right.mt-4
+						p 14 Articulos
+				.row
+					.col-sm-12
+						table.table
+							thead
+								tr
+									th(colspan="2") Producto
+									th(colspan="2") Piezas
+									th Unidad
+									th Precio
+							tbody
+								tr
+									td
+										img(src="")
+										p CBA-20403
+									td
+										h3 Camisa Azul botones
+										p
+											| Talla: M
+											| Color: Azul
+									td
+										p Seleccionar
+									td
+										p $649.00 MX
+									td
+										p $599.00 MX
+									td
+										p $2,995.00 MX
+								tr
+									td
+										img(src="")
+										p CBA-20403
+									td
+										h3 Camisa Azul botones
+										p
+											| Talla: M
+											| Color: Azul
+									td
+										p Seleccionar
+									td
+										p $649.00 MX
+									td
+										p $599.00 MX
+									td
+										p $2,995.00 MX
+								tr
+									td
+										img(src="")
+										p CBA-20403
+									td
+										h3 Camisa Azul botones
+										p
+											| Talla: M
+											| Color: Azul
+									td
+										p Seleccionar
+									td
+										p $649.00 MX
+									td
+										p $599.00 MX
+									td
+										p $2,995.00 MX
+				.row
+					.col-sm-4.col-sm-offset-8
+						table.table
+							tr
+								th RESUMEN
+								th Sub-total:
+								th MX $8,386.00
+							tr
+								td
+								td Envío:
+								td MX $200.00
+							tr
+								td TOTAL
+								td
+								td MX $8,586.00
+						a(href="shipping.html").btn.btn-link.btn-block COMPRAR
+				.row
+					.col-sm-12
+						h2 - PRODUCTOS RECOMENDADOS
+				.row
+					.col-sm-3.product
+						img(src="")
+						h3 Camisa Azul Botones
+						span $405.00
+						strike $590.00
+						a(href="").btn.btn-default.btn-block Comprar
+					.col-sm-3.product
+						img(src="")
+						h3 Camisa Azul Botones
+						span $405.00
+						strike $590.00
+						a(href="").btn.btn-default.btn-block Comprar
+					.col-sm-3.product
+						img(src="")
+						h3 Camisa Azul Botones
+						span $405.00
+						strike $590.00
+						a(href="").btn.btn-default.btn-block Comprar
+					.col-sm-3.product
+						img(src="")
+						h3 Camisa Azul Botones
+						span $405.00
+						strike $590.00
+						a(href="").btn.btn-default.btn-block Comprar
+		include parts/footer.pug

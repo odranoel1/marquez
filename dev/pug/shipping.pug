@@ -1,0 +1,96 @@
+doctype html
+html(lang="es")
+	head
+		meta(name="charset", charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width')
+		meta(name="title", content="")
+		meta(name="description", content="")
+		meta(name="keywords", content="")
+		meta(name="robots", content="index, follow")
+		meta(name="author", content="http://www.lava.mx")
+		meta(name="distribution", content="global")
+		meta(name="rating" content="general")
+		meta(name="revisit-after" content="14 Days")
+		title
+		link(rel="stylesheet", href="//use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+		link(rel="stylesheet", href="assets/vendor.css")
+		link(rel="stylesheet", href="assets/main.css")
+		link(rel="icon", type="image/png", href="favicon.png")
+
+		script(src="assets/vendor.js")
+		script(src="assets/main.js")
+	body
+		include parts/header.pug
+		
+		.Shipping
+			.container-fluid
+				.row
+					.col-sm-4.col-sm-offset-2
+						h2 - INFORMACIÓN DE CONTACTO
+						form
+							.form-group
+								label Correo
+								input(type="email").form-control
+							.form-group
+								label Nombre
+								input(type="text").form-control
+							.form-group
+								label Apellidos
+								input(type="text").form-control
+						h2 - DIRECCIÓN DE ENVÍO
+							.form-group
+								label Dirección
+								input(type="text").form-control
+						.row
+							.col-sm-6.form-group
+								label Colonia
+								input(type="text").form-control
+							.col-sm-6.form-group
+								label País
+								input(type="text").form-control
+						.row
+							.col-sm-6.form-group
+								label Estado
+								input(type="text").form-control
+							.col-sm-6.form-group
+								label C.P
+								input(type="text").form-control
+						.row
+							.col-sm-12.form-group
+								label Teléfono
+								input(type="text").form-control
+								label Guardar mi información y consultar más rápidamente la próxima vez
+								input(type="radio")
+						h2 - DIRECCIÓN DE ENVÍO
+							label Recoger en tienda
+							input(type="radio")
+							label Envío Regular ($200)
+							input(type="radio")
+						a(href="payment.html").btn.btn-link.btn-block CONTINUAR A FORMAS DE PAGO
+					.col-sm-6.side-right
+						h2 - RESUMEN DE COMPRA
+						img(src="")
+						p CBA-20403							
+						h3 Camisa Azul botones
+						p
+							| Talla: M
+							| Color: Azul
+							| Piezas: 5
+						p $2,995.00 MX
+						.row
+							.col-sm-12
+								p Cupón de Descuento
+								input(type="text")
+								button(type="submit").btn.btn-link USAR
+								table.table
+									tr
+										th Sub-total:
+										th MX $8,386.00
+									tr
+										td Envío:
+										td MX $0.00
+									tr
+										td Total:
+										td MX $8,586.00
+		include parts/footer.pug

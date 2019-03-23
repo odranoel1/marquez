@@ -1,9 +1,11 @@
 {
-  "name": "base-web",
+  "name": "marquez",
   "version": "1.0.0",
-  "description": "Base layout web app",
+  "description": "Base layout marquez",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "bower": "^1.8.8"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",

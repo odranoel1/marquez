@@ -19,27 +19,29 @@ header.Header
 									a.nav-link(href="#") Nosotros
 								li.nav-item
 									a.nav-link(href="#") Contacto
-				
-		//- .sidebar.right I am on right!
-		//- .sidebar.top I am on top!
-		//- .sidebar.bottom I am on bottom!
 	.container-fluid
 		.row
 			.col-md-8.col-md-offset-2.hidden-xs.hidden-sm
 				.row
-					.col-md-2
+					.col-md-6
 						a.d-block(href="")
 							img.img-fluid(src="assets/img/logo.jpg", alt="")
-					.col-md-10
-						nav.navbar
-							ul.nav.navbar-nav
-								li
-									a(href="#", class=section == 'index' ? 'active' : '') Home
-								li
-									a(href="#") Nosotros
-								li
-									a(href="#") Contacto
-								
+					.col-md-6
+						ul.nav.navbar-nav
+							li
+								a(href="#", class=section == 'index' ? 'active' : '') HISTORIA
+							li
+								a(href="#") ESTILO
+							li
+								a(href="general-product.html") SHOP
+							li
+								a(href="contact.html") CONTACTO
+							li
+								a(href="")
+									.fas.fa-shopping-cart
+							li
+								a(href="login.html")
+									i.far.fa-user
 			.col-xs-12.visible-xs.visible-sm
 				a(href="#", data-action="toggle", data-side="left").sidebar-btn.pull-right
 					i.fa.fa-bars

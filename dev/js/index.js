@@ -22,7 +22,7 @@ $( document ).ready(function() {
     if($(".sidebars").length != 0)
     {
         var sides = ["left", "top", "right", "bottom"];
-      
+
         for (var i = 0; i < sides.length; ++i) {
             var cSide = sides[i];
             $(".sidebar." + cSide).sidebar({side: cSide});
@@ -36,4 +36,10 @@ $( document ).ready(function() {
             return false;
         });
     }
+
+    $('#products-carousel').owlCarousel({
+      nav: true,
+      loop: true,
+      dots: false
+    });
 });

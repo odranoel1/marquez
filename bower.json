@@ -1,6 +1,6 @@
 {
-  "name": "base",
-  "description": "Base layout web app",
+  "name": "marquez",
+  "description": "Base layout marquez",
   "main": "gulpfile.js",
   "license": "ISC",
   "homepage": "https://github.com/jjacquesf/base-web",
@@ -21,6 +21,7 @@
     "matchHeight": "https://github.com/liabru/jquery-match-height.git#^0.7.2",
     "bower": "*",
     "install": "^1.0.4",
-    "slider-pro": "^1.4.0"
+    "slider-pro": "^1.4.0",
+    "owl.carousel": "^2.3.4"
   }
 }

@@ -1,0 +1,83 @@
+doctype html
+html(lang="es")
+	head
+		meta(name="charset", charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width')
+		meta(name="title", content="")
+		meta(name="description", content="")
+		meta(name="keywords", content="")
+		meta(name="robots", content="index, follow")
+		meta(name="author", content="http://www.lava.mx")
+		meta(name="distribution", content="global")
+		meta(name="rating" content="general")
+		meta(name="revisit-after" content="14 Days")
+		title
+		link(rel="stylesheet", href="//use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+		link(rel="stylesheet", href="assets/vendor.css")
+		link(rel="stylesheet", href="assets/main.css")
+		link(rel="icon", type="image/png", href="favicon.png")
+
+		script(src="assets/vendor.js")
+		script(src="assets/main.js")
+	body
+		include parts/header.pug
+		
+		.Product
+			.container
+				.row
+					.col-sm-4
+						h2 - CABALLEROS
+					.col-sm-8.filter
+						form
+							span FILTRAR POR:
+							label Precio:
+							select
+								option MAYOR PRECIO
+								option 2
+							label Talla:
+							select
+								option MEDIANA
+								option 2
+				.row
+					.col-sm-4.product
+						img(src="")
+						h3 Camisa Azul botones
+						span $405.00
+						strike $590.00
+						a(href="detail-product.html").btn.btn-default Comprar
+					.col-sm-4.product
+						img(src="")
+						h3 Camisa Azul botones
+						span $405.00
+						strike $590.00
+						a(href="detail-product.html").btn.btn-default Comprar
+					.col-sm-4.product
+						img(src="")
+						h3 Camisa Azul botones
+						span $405.00
+						strike $590.00
+						a(href="detail-product.html").btn.btn-default Comprar
+				.row
+					.col-sm-4.product
+						img(src="")
+						h3 Camisa Azul botones
+						span $405.00
+						strike $590.00
+						a(href="detail-product.html").btn.btn-default Comprar
+					.col-sm-4.product
+						img(src="")
+						h3 Camisa Azul botones
+						span $405.00
+						strike $590.00
+						a(href="detail-product.html").btn.btn-default Comprar
+					.col-sm-4.product
+						img(src="")
+						h3 Camisa Azul botones
+						span $405.00
+						strike $590.00
+						a(href="detail-product.html").btn.btn-default Comprar
+				.row
+					.col-sm-12.text-center
+						a(href="#").load-prod Cargar más
+		include parts/footer.pug

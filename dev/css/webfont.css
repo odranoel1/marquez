@@ -1,0 +1,24 @@
+/* Webfont for Marquéz by Lava Studio */
+@font-face {
+  font-family: 'Roboto-Condensed';
+  src: url('fonts/Roboto-Condensed.woff2') format('woff2'),
+       url('fonts/Roboto-Condensed.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Condensed-Light';
+  src: url('fonts/Roboto-CondensedLight.woff2') format('woff2'),
+       url('fonts/Roboto-CondensedLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-BoldCondensed';
+  src: url('fonts/Roboto-BoldCondensed.woff2') format('woff2'),
+       url('fonts/Roboto-BoldCondensed.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

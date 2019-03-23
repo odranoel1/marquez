@@ -32,18 +32,48 @@ html(lang="es")
 					img.sp-image(data-default='http://bqworks.com/slider-pro/images/image1_medium.jpg', data-retina='http://bqworks.com/slider-pro/images/image1_large.jpg', src='http://bqworks.com/slider-pro/images/image1_medium.jpg', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
 				.sp-slide
 					img.sp-image(data-default='http://bqworks.com/slider-pro/images/image1_medium.jpg', data-retina='http://bqworks.com/slider-pro/images/image1_large.jpg', src='http://bqworks.com/slider-pro/images/image1_medium.jpg', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
-
-				// // Slide 2
-				// .sp-slide
-				// 	p Lorem ipsum dolor sit amet
-				// // Slide 3
-				// .sp-slide
-				// 	h3.sp-layer Lorem ipsum dolor sit amet
-				// 	p.sp-layer consectetur adipisicing elit
-
-		.Content
+		.Home
 			.container
 				.row
 					.col-sm-12
-						p hola
+						h2.title-default PRODUCTOS DESTACADOS -
+						.row.owl-carousel.owl-theme#products-carousel
+							.col-sm-12.product
+								img(src="")
+								h3 Camisa Azul Botones
+								span $405.00
+								strike $590.00
+								a(href="").btn.btn-default.btn-block Comprar
+							.col-sm-12.product
+								img(src="")
+								h3 Camisa Azul Botones
+								span $405.00
+								strike $590.00
+								a(href="").btn.btn-default.btn-block Comprar
+							.col-sm-12.product
+								img(src="")
+								h3 Camisa Azul Botones
+								span $405.00
+								strike $590.00
+								a(href="").btn.btn-default.btn-block Comprar
+							.col-sm-12.product
+								img(src="")
+								h3 Camisa Azul Botones
+								span $405.00
+								strike $590.00
+								a(href="").btn.btn-default.btn-block Comprar
+			.about
+				.container
+					.row
+						.col-sm-6
+							img(src="", alt="")
+						.col-sm-6
+							h2.title-default MARQUÉZ -
+							p
+								| Es un título nobiliario mediante el cual monarcas europeos han concedido un honor o dignidad a ciertas personas y linajes a lo largo de la historia.
+								| La marca como tal representa inmediatamente el rango elite al que pertenece. #[br]#[br]
+								| En conjunto con la calidad de nuestras prendas se crea la fuerza y elegancia suficiente para representar la esencia de esta marca 
+			.container
+				.row
+					.col-sm-12
 		include parts/footer.pug

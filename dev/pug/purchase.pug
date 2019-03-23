@@ -1,0 +1,75 @@
+doctype html
+html(lang="es")
+	head
+		meta(name="charset", charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width')
+		meta(name="title", content="")
+		meta(name="description", content="")
+		meta(name="keywords", content="")
+		meta(name="robots", content="index, follow")
+		meta(name="author", content="http://www.lava.mx")
+		meta(name="distribution", content="global")
+		meta(name="rating" content="general")
+		meta(name="revisit-after" content="14 Days")
+		title
+		link(rel="stylesheet", href="//use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+		link(rel="stylesheet", href="assets/vendor.css")
+		link(rel="stylesheet", href="assets/main.css")
+		link(rel="icon", type="image/png", href="favicon.png")
+
+		script(src="assets/vendor.js")
+		script(src="assets/main.js")
+	body
+		include parts/header.pug
+		
+		.Shipping
+			.container
+				.row
+					.col-sm-6
+						h2 - GRACIAS POR TU COMPRA, JUAN.
+						P ¡Tu compra ya fue confirmada!
+						h2 Información del cliente
+						p Juan Pérez
+						span juan.perez@hotmail.com
+						p Donato Guerra #1234 Centro, Guadalajara, Jal. Mex
+						p C.P. 48740
+						span Tel: 33 1321 2561
+						h2 Método de envío
+						p Envío regular ($200)
+						h2 Método de pago
+						p Pago en Oxxo con efectivo
+						
+						a(href="general-product.html").btn.btn-link.btn-block VOLVER A LA TIENDA	
+						span ¿Necesitas ayuda?
+						a(href="") Contáctanos
+					.col-sm-6
+						h2 - RESUMEN DE COMPRA
+						.row
+							.col-sm-4
+								img(src="")
+								p CBA-20403
+							.col-sm-4
+								h3 Camisa Azul botones
+								p
+									| Talla: M
+									| Color: Azul
+									| Piezas: 5
+							.col-sm-4
+								p $2,995.00 MX
+						.row
+							.col-sm-12
+								p Cupón de Descuento
+								input(type="text")
+								button(type="submit").btn.btn-link USAR
+								table.table
+									tr
+										th Sub-total:
+										th MX $8,386.00
+									tr
+										td Envío:
+										td MX $0.00
+									tr
+										td Total:
+										td MX $8,586.00
+		include parts/footer.pug
