@@ -3,25 +3,33 @@
     background-color $gray
     p
       text-align right
+  .banner
+    background-image url('../assets/img/marquez-home-banner-2.png')
+    background-position center
+    background-repeat no-repeat
+    padding 10% 0
+    max-width 100%
+    display block
 .Contact
   .responsive
+    margin-top 60px
     margin-left 16.6%
-    h3, a
-      color #7a7676
-      font-weight bold
-    p
-      color #7a7676
-    i
-      color $yellow
-    @media only screen and (max-width $tablet_size)
-      margin-left 8.3%
-      margin-bottom 20px
+    .content
+      margin-left 30px
+      h3, a
+        font-weight bold
+        color $gray-body
+      i
+        color $yellow
+      p
+        color $gray-body
+      @media only screen and (max-width $tablet_size)
+        margin-left 8.3%
+        margin-bottom 20px
 .Login
   margin 150px 0
   a
-    color #7a7676
-  span
-    margin 0 20px
+    color $gray-body
   form
     margin-top 60px
     .access
@@ -35,17 +43,19 @@
         margin-top 60px
 .Register
   margin 50px 0
-  .half
-    width 50%
-    float left
-    padding-right 10px
-  button
-    width 100%
-    @media only screen and (min-width $tablet_size)
+  form
+    margin-top 30px
+    .half
       width 50%
-      margin-top 40px
+      float left
+      padding-right 10px
+    button
+      width 100%
+      @media only screen and (min-width $tablet_size)
+        width 50%
+        margin-top 40px
 .Product
-  margin-top 40px
+  margin-top 20px
   margin-bottom 80px
   .filter
     margin-top 20px
@@ -54,6 +64,7 @@
     form
       span
         color $yellow
+        margin-right 10px
       label
         color $black
       select
@@ -69,8 +80,67 @@
         @media only screen and (max-width $tablet_size)
           width 100%
           display block
+    .prices
+      @media only screen and (min-width $tablet_size)
+        margin-right 40px
   .load-prod
-    color #7a7676
+    color $gray-body
+.Shipping .save-data
+  background-color $gray-two
+  padding 10px
+.Payment
+  a
+    color $gray-body
+  .item
+    border-bottom 2px solid rgba($gray-body, 0.5)
+    padding 10px
+  form
+    .item
+      border transparent
+      border 2px solid rgba($gray-body, 0.5)
+.Detail-product
+  .fa-chevron-left, .fa-chevron-left a
+    color $yellow
+  .fa-chevron-left a
+    font-family 'Roboto-Condensed'
+    padding-left 8px
+  .price
+    font-size 1.4em
+    margin-top 20px
+    width 100%
+    strike
+      margin-left 20px
+      color $gray-body
+    span
+      float right
+  .size
+    margin-bottom 20px
+    h4
+      border-bottom 2px solid $yellow
+      color $yellow
+    p
+      border 1px solid $black
+      padding 10px
+    span
+      color rgba($gray-body,0.8)
+  .social-share
+    color $black
+    margin-left 10px
+  .box-collapse
+    color $black
+    button
+      border transparent
+      background-color transparent
+      display block
+      margin 10px 0
+      padding 0
+      i
+        margin-left 10px
+        color $black
+    #description
+      color $gray-body
+.Terms p, .Privacy p
+  text-align justify
 
 .product
   text-align center
@@ -78,11 +148,42 @@
   h3
     color $yellow
   strike
-    color #969696
+    color rgba($gray-body, 0.5)
     margin-left 20px
   a
     margin-top 20px
-    width 80%
+    width 100%
 
-.side-right
+.prod
   background-color $gray-two
+  .resume
+    width 70%
+    margin-top 20px
+    .image, .description, .price
+      width 30%
+      display inline-block
+      vertical-align top
+      @media only screen and (max-width $tablet_size)
+        width 100%
+    .image p
+      color $yellow
+    .description h4
+      margin-top 0
+    .price, .price span
+      float right
+  .cupon
+    border-top 1px solid rgba($gray-body, 0.5);
+    padding 20px 0
+    input
+      width 80%
+  .cupon, .total
+    width 60%
+  .resume, .cupon, .total
+    @media only screen and (max-width 1400px)
+      width 100%
+  .total
+    th, td
+        text-align right
+        font-weight normal
+    @media only screen and (max-width $tablet_size)
+      width 100%

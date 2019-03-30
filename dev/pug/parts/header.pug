@@ -1,48 +1,42 @@
 header.Header
-	.sidebars
-		.sidebar.left 
-			.container-fluid
-				.row
-					.sidebar-header.col-xs-12
-						a.logo(href="#")
-							img(src="assets/img/logo.jpg", alt="")
-						a.sidebar-btn.pull-right(href='#', data-action='toggle', data-side='left')
-							i.fa.fa-time
-							| Cerrar
-				.row
-					.sidebar-content.col-xs-12
-						nav
-							ul
-								li(class=section == 'index' ? 'active' : '')
-									a(href="#") Home
-								li.nav-item
-									a.nav-link(href="#") Nosotros
-								li.nav-item
-									a.nav-link(href="#") Contacto
 	.container-fluid
-		.row
-			.col-md-8.col-md-offset-2.hidden-xs.hidden-sm
-				.row
-					.col-md-6
-						a.d-block(href="")
-							img.img-fluid(src="assets/img/logo.jpg", alt="")
-					.col-md-6
-						ul.nav.navbar-nav
-							li
-								a(href="#", class=section == 'index' ? 'active' : '') HISTORIA
-							li
-								a(href="#") ESTILO
-							li
-								a(href="general-product.html") SHOP
-							li
-								a(href="contact.html") CONTACTO
-							li
-								a(href="")
-									.fas.fa-shopping-cart
-							li
-								a(href="login.html")
-									i.far.fa-user
-			.col-xs-12.visible-xs.visible-sm
-				a(href="#", data-action="toggle", data-side="left").sidebar-btn.pull-right
-					i.fa.fa-bars
-					| Menu
+		.row.hidden-xs.hidden-sm
+			.col-md-4.col-sm-offset-2
+				a.d-block(href="/")
+					img.img-fluid(src="assets/img/logo.jpg", alt="Marqúez Logotipo")
+			.col-md-6
+				ul.nav.navbar-nav
+					li
+						a(href="#", class=section == 'index' ? 'active' : '') HISTORIA
+					li
+						a(href="#") ESTILO
+					li
+						a(href="general-product.html") SHOP
+					li
+						a(href="contact.html") CONTACTO
+					li
+						a(href="cart.html")
+							i.fas.fa-shopping-cart
+					li
+						a(href="login.html")
+							i.far.fa-user
+		.row.visible-xs.visible-sm.my-3
+			.col-xs-12
+				a.d-block(href="/")
+					img.img-fluid(src="assets/img/logo.jpg", alt="Marqúez Logotipo")
+				.mobil-items
+					a(href="cart.html")
+						i.fas.fa-shopping-cart
+					a(href="login.html")
+						i.far.fa-user
+					a(href="#")#drop
+						i.fa.fa-bars
+				ul#drop-menu
+					li
+						a(href="#", class=section == 'index' ? 'active' : '') HISTORIA
+					li
+						a(href="#") ESTILO
+					li
+						a(href="general-product.html") SHOP
+					li
+						a(href="contact.html") CONTACTO

@@ -26,7 +26,8 @@ html(lang="es")
 		.container
 			.row.Login
 				.col-sm-8.col-sm-offset-2
-					h2 - INICIAR SESIÓN
+					.line-title
+					h2 INICIAR SESIÓN
 					form
 						.form-group
 							label Usuario
@@ -37,6 +38,6 @@ html(lang="es")
 						button(type="submit").btn.btn-link ENTRAR	
 						.access
 							a(href="register.html") Regístrate
-							span |
+							span.space-x |
 							a(href="") Olvidé mi contraseña
 		include parts/footer.pug

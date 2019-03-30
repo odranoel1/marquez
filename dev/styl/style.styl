@@ -8,6 +8,7 @@ $white = #fff
 $yellow = #d8b878
 $gray = #ece9dd
 $gray-two = #ebebeb
+$gray-body = #767676
 
 @import "b4.styl"
 @import "Header/style.styl"
@@ -24,6 +25,10 @@ h1
 h2
 	font-size 1.4em
 	color $yellow
+	margin-top 0
+	span
+		padding 0 10px
+		font-size 1.3em
 h3
 	font-size 1.3em
 h4
@@ -61,10 +66,27 @@ input
 		background-color $black
 		color $white
 
+.flex
+	display flex
+	@media only screen and (max-width $tablet_size)
+		flex-direction column
+
 .title
 	&-default
 		color $black
 		text-align right
+
+.space-x
+	margin 0 20px
+
+.line-title
+	border-top 2px solid $yellow
+	margin-right 10px
+	height 20px
+	width 25px
+	position relative
+	top 12px
+	float left
 
 .owl-nav
 	position absolute
@@ -72,8 +94,9 @@ input
 	width 100%
 	.owl-prev, .owl-next
 		position absolute
-		color $gray
-		font-size 2em !important
+		i
+			color $gray-body
+			font-size 1.3em
 	.owl-prev
 		right 100%
 	.owl-next
@@ -103,3 +126,13 @@ input
 		background #d5edf8
 		color #205791
 		border-color #92cae4
+
+.sp-buttons
+	position absolute
+	bottom 0
+	.sp-button
+		background-color $white
+		border 1px solid $black
+		padding 5px
+	.sp-selected-button
+		background-color $black

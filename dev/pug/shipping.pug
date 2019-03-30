@@ -23,74 +23,112 @@ html(lang="es")
 	body
 		include parts/header.pug
 		
-		.Shipping
-			.container-fluid
-				.row
-					.col-sm-4.col-sm-offset-2
-						h2 - INFORMACIÓN DE CONTACTO
-						form
-							.form-group
-								label Correo
-								input(type="email").form-control
-							.form-group
-								label Nombre
-								input(type="text").form-control
-							.form-group
-								label Apellidos
-								input(type="text").form-control
-						h2 - DIRECCIÓN DE ENVÍO
-							.form-group
-								label Dirección
-								input(type="text").form-control
-						.row
-							.col-sm-6.form-group
-								label Colonia
-								input(type="text").form-control
-							.col-sm-6.form-group
-								label País
-								input(type="text").form-control
-						.row
-							.col-sm-6.form-group
-								label Estado
-								input(type="text").form-control
-							.col-sm-6.form-group
-								label C.P
-								input(type="text").form-control
-						.row
-							.col-sm-12.form-group
-								label Teléfono
-								input(type="text").form-control
-								label Guardar mi información y consultar más rápidamente la próxima vez
-								input(type="radio")
-						h2 - DIRECCIÓN DE ENVÍO
-							label Recoger en tienda
-							input(type="radio")
-							label Envío Regular ($200)
-							input(type="radio")
-						a(href="payment.html").btn.btn-link.btn-block CONTINUAR A FORMAS DE PAGO
-					.col-sm-6.side-right
-						h2 - RESUMEN DE COMPRA
-						img(src="")
-						p CBA-20403							
-						h3 Camisa Azul botones
-						p
-							| Talla: M
-							| Color: Azul
-							| Piezas: 5
-						p $2,995.00 MX
-						.row
-							.col-sm-12
-								p Cupón de Descuento
-								input(type="text")
-								button(type="submit").btn.btn-link USAR
-								table.table
-									tr
-										th Sub-total:
-										th MX $8,386.00
-									tr
-										td Envío:
-										td MX $0.00
-									tr
-										td Total:
-										td MX $8,586.00
+		.container-fluid
+			.row.Shipping.flex
+				.col-sm-6.col-md-4.col-md-offset-2.my-5
+					h2 - INFORMACIÓN DE CONTACTO
+					form
+						.form-group
+							label Correo
+							input(type="email").form-control
+						.form-group
+							label Nombre
+							input(type="text").form-control
+						.form-group
+							label Apellidos
+							input(type="text").form-control
+					h2 - DIRECCIÓN DE ENVÍO
+					.row
+						.col-sm-12.form-group
+							label Dirección
+							input(type="text").form-control
+					.row
+						.col-sm-6.form-group
+							label Colonia
+							input(type="text").form-control
+						.col-sm-6.form-group
+							label País
+							input(type="text").form-control
+					.row
+						.col-sm-6.form-group
+							label Estado
+							input(type="text").form-control
+						.col-sm-6.form-group
+							label C.P
+							input(type="text").form-control
+					.row
+						.col-sm-12.form-group
+							label Teléfono
+							input(type="text").form-control
+							.radio.save-data
+								label
+									input(type="radio")
+									| Guardar mi información y consultar más rápidamente la próxima vez
+					h2 - DIRECCIÓN DE ENVÍO
+					.row.mb-5
+						.col-sm-6.form-group
+							.radio
+								label
+									input(type="radio" checked)
+									| Recoger en tienda
+						.col-sm-6.form-group
+							.radio
+								label
+									input(type="radio")
+									| Envío Regular ($200)
+					a(href="payment.html").btn.btn-link.btn-block CONTINUAR A FORMAS DE PAGO
+				.col-sm-6.prod
+					h2 - RESUMEN DE COMPRA
+					.resume
+						.image
+							img(src="assets/img/marquez-home-producto-1.png" alt="Marquéz Camisa" style="width:50%").img-responsive
+							p CBA-20403
+						.description
+							h4 Camisa Azul botones
+							p
+								| Talla: M #[br]
+								| Color: Azul #[br]
+								| Piezas: 5 #[br]
+						.price
+							p $2,995.00 MX
+					.resume
+						.image
+							img(src="assets/img/marquez-home-producto-2.png" alt="Marquéz Camisa" style="width:50%").img-responsive
+							p CBA-20403
+						.description
+							h4 Camisa Blanca botones
+							p
+								| Talla: M #[br]
+								| Color: Azul #[br]
+								| Piezas: 5 #[br]
+						.price
+							p $2,995.00 MX
+					.resume
+						.image
+							img(src="assets/img/marquez-home-producto-1.png" alt="Marquéz Camisa" style="width:50%").img-responsive
+							p CBA-20403
+						.description
+							h4 Camisa Blanca botones
+							p
+								| Talla: M #[br]
+								| Color: Azul #[br]
+								| Piezas: 5 #[br]
+						.price
+							p $2,995.00 MX
+					.cupon
+						p Cupón de Descuento
+						input(type="text")
+						button(type="submit").btn.btn-link USAR
+					table.table.total
+						thead
+							tr
+								th Sub-total:
+								th MX $8,386.00
+						tbody
+							tr
+								td Envío:
+								td MX $0.00
+							tr
+								td Total:
+								td MX $8,586.00
 		include parts/footer.pug

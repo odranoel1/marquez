@@ -16,48 +16,114 @@ html(lang="es")
 		link(rel="stylesheet", href="//use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
 		link(rel="stylesheet", href="assets/vendor.css")
 		link(rel="stylesheet", href="assets/main.css")
-		link(rel="icon", type="image/png", href="favicon.png")
+		link(rel="icon", type="image/png", href="assets/img/marquez-favicon.png")
 
 		script(src="assets/vendor.js")
 		script(src="assets/main.js")
 	body
-		include parts/header.pug
-		
+		header.header-main.d-none
+			.container-fluid
+				.row.hidden-xs.hidden-sm
+					.col-md-4.col-sm-offset-2
+						a.d-block(href="/")
+							img.img-fluid(src="assets/img/Logo-Horizontal.png", alt="Marqúez Logotipo")
+					.col-md-6
+						ul.nav.navbar-nav
+							li
+								a(href="#", class=section == 'index' ? 'active' : '') HISTORIA
+							li
+								a(href="#") ESTILO
+							li
+								a(href="general-product.html") SHOP
+							li
+								a(href="contact.html") CONTACTO
+							li
+								a(href="cart.html")
+									i.fas.fa-shopping-cart
+							li
+								a(href="login.html")
+									i.far.fa-user
+				.row.visible-xs.visible-sm.my-3
+					.col-xs-12
+						a.d-block(href="/")
+							img.img-fluid(src="assets/img/Logo-Horizontal.png", alt="Marqúez Logotipo")
+						.mobil-items
+							a(href="cart.html")
+								i.fas.fa-shopping-cart
+							a(href="login.html")
+								i.far.fa-user
+							a(href="#")#drop
+								i.fa.fa-bars
+						ul#drop-menu
+							li
+								a(href="#", class=section == 'index' ? 'active' : '') HISTORIA
+							li
+								a(href="#") ESTILO
+							li
+								a(href="general-product.html") SHOP
+							li
+								a(href="contact.html") CONTACTO
+
+		header.header-secondary
+			.container-fluid.hidden-xs.hidden-sm
+				.row.menu
+					.col-sm-3.col-sm-offset-6
+						ul.nav.navbar-nav
+							li
+								a(href="#", class=section == 'index' ? 'active' : '') HISTORIA
+							li
+								a(href="#") ESTILO
+							li
+								a(href="general-product.html") SHOP
+							li
+								a(href="contact.html") CONTACTO
+							li
+								a(href="cart.html")
+									i.fas.fa-shopping-cart
+							li
+								a(href="login.html")
+									i.far.fa-user
+				.row.logo.py-5
+					.col-sm-12
+						img(src="assets/img/Logo-Vertical.png" alt="Marquéz Logotipo")
 		#home-sidebar.slider-pro
 			.sp-slides
 				// Slide 1
 				.sp-slide
-					img.sp-image(data-default='http://bqworks.com/slider-pro/images/image1_medium.jpg', data-retina='http://bqworks.com/slider-pro/images/image1_large.jpg', src='http://bqworks.com/slider-pro/images/image1_medium.jpg', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
+					img.sp-image(data-default='assets/img/marquez-home-banner.png', data-retina='assets/img/marquez-home-banner.png', src='assets/img/marquez-home-banner.png', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
+					.sp-layer
+						a(href="").btn.btn-default COMPRAR
 				.sp-slide
-					img.sp-image(data-default='http://bqworks.com/slider-pro/images/image1_medium.jpg', data-retina='http://bqworks.com/slider-pro/images/image1_large.jpg', src='http://bqworks.com/slider-pro/images/image1_medium.jpg', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
+					img.sp-image(data-default='assets/img/marquez-home-banner.png', data-retina='assets/img/marquez-home-banner.png', src='assets/img/marquez-home-banner.png', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
 				.sp-slide
-					img.sp-image(data-default='http://bqworks.com/slider-pro/images/image1_medium.jpg', data-retina='http://bqworks.com/slider-pro/images/image1_large.jpg', src='http://bqworks.com/slider-pro/images/image1_medium.jpg', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
+					img.sp-image(data-default='assets/img/marquez-home-banner.png', data-retina='assets/img/marquez-home-banner.png', src='assets/img/marquez-home-banner.png', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
 		.Home
 			.container
 				.row
 					.col-sm-12
-						h2.title-default PRODUCTOS DESTACADOS -
+						h2.title-default PRODUCTOS DESTACADOS
+							span -
 						.row.owl-carousel.owl-theme#products-carousel
 							.col-sm-12.product
-								img(src="")
+								img(src="assets/img/marquez-home-producto-1.png" alt="Marquéz Camisa")
 								h3 Camisa Azul Botones
 								span $405.00
 								strike $590.00
 								a(href="").btn.btn-default.btn-block Comprar
 							.col-sm-12.product
-								img(src="")
+								img(src="assets/img/marquez-home-producto-2.png" alt="Marquéz Camisa")
 								h3 Camisa Azul Botones
 								span $405.00
 								strike $590.00
 								a(href="").btn.btn-default.btn-block Comprar
 							.col-sm-12.product
-								img(src="")
+								img(src="assets/img/marquez-home-producto-1.png" alt="Marquéz Camisa")
 								h3 Camisa Azul Botones
 								span $405.00
 								strike $590.00
 								a(href="").btn.btn-default.btn-block Comprar
 							.col-sm-12.product
-								img(src="")
+								img(src="assets/img/marquez-home-producto-2.png" alt="Marquéz Camisa")
 								h3 Camisa Azul Botones
 								span $405.00
 								strike $590.00
@@ -66,14 +132,15 @@ html(lang="es")
 				.container
 					.row
 						.col-sm-6
-							img(src="", alt="")
+							img(src="assets/img/marquez-home-historia.png", alt="Marquéz Historia").img-responsive
 						.col-sm-6
-							h2.title-default MARQUÉZ -
+							h2.title-default MARQUÉZ
+								span -
 							p
 								| Es un título nobiliario mediante el cual monarcas europeos han concedido un honor o dignidad a ciertas personas y linajes a lo largo de la historia.
 								| La marca como tal representa inmediatamente el rango elite al que pertenece. #[br]#[br]
 								| En conjunto con la calidad de nuestras prendas se crea la fuerza y elegancia suficiente para representar la esencia de esta marca 
-			.container
+			.container-fluid
 				.row
-					.col-sm-12
+					.col-sm-12.banner
 		include parts/footer.pug

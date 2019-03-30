@@ -1,41 +1,32 @@
-.Header
+.Header, .header-main
 	background-color $black
-	.sidebar.left
-		position fixed
-		overflow-y scroll
-		top 0
-		left 0
-		bottom 0
-		width 260px
-		background #ffffff
-		z-index 9999999999
-
-	.sidebar.right
+	.mobil-items
+		position absolute
 		top 0
 		right 0
-		bottom 0
-		width 270px
-		background #ffffff
-		z-index 9999999999
-
-	.sidebar.bottom
+	#drop-menu
+		background-color $black
+		padding-left 15px
+		position absolute
 		left 0
 		right 0
-		bottom 0
-		height 270px
-		background #ffffff
-		z-index 9999999999
+		z-index 1
+		display none
+		li
+			padding 15px 0
 
-	.sidebar.top
-		left 0
-		right 0
-		top 0
-		height 270px
-		background #ffffff
-		z-index 9999999999
+.header-secondary
+	background-color $gray
+	.menu
+		a, i
+			color $black
+	.logo
+		background-color $black
+		text-align center
 
-	.sidebars > .sidebar
-		box-shadow 0 0 5px rgba(0, 0, 0, 0.64)
-		position fixed
-		color white
-		padding 1em
+.fixed
+	position fixed
+	top 0
+	left 0
+	right 0
+	z-index 2

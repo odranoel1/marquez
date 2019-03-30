@@ -22,6 +22,7 @@
     "bower": "*",
     "install": "^1.0.4",
     "slider-pro": "^1.4.0",
-    "owl.carousel": "^2.3.4"
+    "owl.carousel": "^2.3.4",
+    "magnify": "^2.3.2"
   }
 }

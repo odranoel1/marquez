@@ -1,20 +1,25 @@
 .footer
   text-align center
+  color $white
   .suscribe
     background-color $gray
     padding 50px 0
+    label
+      color $black
+      font-size 1.2em
+      font-weight bold
     input
       width 45%
+      margin-bottom 10px
       @media only screen and (max-width $tablet_size)
         width 100%
-        margin-bottom 10px
     button
+      padding 2px 30px
       @media only screen and (max-width $tablet_size)
         display block
         width 100%
   .contact
     background-color $black
-    color $white
     padding 20px 0
     a
       font-size 1.2em
@@ -26,6 +31,9 @@
       margin-right 0
   .privacy
     background-color #181818
+    padding 8px 0
     span
       color $white
       margin 0 20px
+      @media only screen and (max-width $tablet_size)
+        margin 0 10px

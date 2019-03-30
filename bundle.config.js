@@ -8,6 +8,7 @@ module.exports = {
         './bower_components/jquery-sidebar/src/jquery.sidebar.js',
         './bower_components/matchHeight/dist/jquery.matchHeight.js',
         './bower_components/owl.carousel/dist/owl.carousel.js',
+        './bower_components/magnify/dist/js/jquery.magnify.js',
         // './bower_components/sticky.js/dist/sticky.js',
         // './bower_components/enquire/dist/enquire.js',
         // './bower_components/elevatezoom/jquery.elevateZoom-2.2.3.js',
@@ -23,6 +24,7 @@ module.exports = {
         './bower_components/slider-pro/dist/css/slider-pro.css',
         './bower_components/owl.carousel/dist/assets/owl.carousel.css',
         './bower_components/owl.carousel/dist/assets/owl.theme.default.css',
+        './bower_components/magnify/dist/css/magnify.css',
         // './bower_components/pnotify/dist/pnotify.css',
         // './bower_components/pnotify/dist/pnotify.brighttheme.css',
         // './bower_components/iCheck/skins/minimal/minimal.css',
@@ -50,7 +52,7 @@ module.exports = {
   },
   copy: [
     {
-      src: './dev/**/*.{jpg,png,gif}',
+      src: './dev/**/*.{jpg,jpeg,png,gif}',
       base: './dev'
     },
     {

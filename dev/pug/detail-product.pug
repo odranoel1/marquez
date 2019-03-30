@@ -23,44 +23,50 @@ html(lang="es")
 	body
 		include parts/header.pug
 		
-		.Product-detail
+		.Detail-product
 			.container
 				.row
 					.col-sm-12
 						i.fas.fa-chevron-left
-							a(href="") REGRESAR
+							a(href="general-product.html") REGRESAR
 				.row
-					.col-sm-6
-						img(src="")
-					.col-sm-6
+					.col-sm-8
+						a(href="assets/img/marquez-producto-1.png")
+							img(src="assets/img/marquez-home-producto-1.png" alt="Marquéz Producto").zoom
+					.col-sm-4
 						p Camisa de botones blanca para caballero
-						h1 - CAMISA BLANCA BOTONES
-						p Manga corta camisa de botones blanca para caballero
-						p $405
-						span $590
-						p CBB-20408
-						span TALLAS
-						p Chica:
-							span 143 disponibles
-						p Mediana:
-							span 57 disponibles
-						p Grande:
-							span 143 disponibles
-						p Extragrande:
-							span 200 disponibles
-						p Compartir
-						a(href="")
-							i.fab.fa-facebook-f
-						form
-							a(href="cart.html").btn.btn-link.btn-block Agregar al carrito
-							a(href="shipping.html").btn.btn-default.btn-block Comprar
-						p CARACTERISTICA
-							i.fas.fa-chevron-down
-						p
-							| Camisa para caballero de botones color blanca, manga larga, 100% algodón, cuello americano,
-							| puño fino con ajuste de botón, corte recto con ajuste en los hombros, ajuste clásico con cintura
-							| ligeramente entallada para una buena libertad de movimientos y una silueta elegante y cómoda.
-						p GUÍA DE TALLA
-							i.fas.fa-chevron-down
-						img(src="")
+						h2
+							span - 
+							| CAMISA BLANCA BOTONES
+						em Manga corta camisa de botones blanca para caballero
+						.price
+							b $405 
+							strike $590 
+							span CBB-20408
+						.size
+							h4 TALLAS
+							p Chica:
+								span 143 disponibles
+							p Mediana:
+								span 57 disponibles
+							p Grande:
+								span 143 disponibles
+							p Extragrande:
+								span 200 disponibles
+						span Compartir :
+							a(href="")
+								i.fab.fa-facebook-f.social-share
+						form.my-4
+							button(type="submit").btn.btn-link.btn-block Agregar al Carrito
+							button(type="submit").btn.btn-default.btn-block Comprar
+						.box-collapse
+							button(type="button" data-toggle="collapse" data-target="#description") CARACTERISTICA
+								i.fas.fa-chevron-down
+							#description.collapse
+								| Camisa para caballero de botones color blanca, manga larga, 100% algodón, cuello americano,
+								| puño fino con ajuste de botón, corte recto con ajuste en los hombros, ajuste clásico con cintura
+								| ligeramente entallada para una buena libertad de movimientos y una silueta elegante y cómoda.
+							button(type="button" data-toggle="collapse" data-target="#guide") GUÍA DE TALLA
+								i.fas.fa-chevron-down
+							img(src="" alt="Guía de Tallas Camisa Caballero")#guide.collapse
 		include parts/footer.pug
