@@ -1,11 +1,11 @@
-header.Header
-	.container-fluid
+header.fix-height
+	.Header.main.container-fluid.fixed
 		.row.hidden-xs.hidden-sm
 			.col-md-4.col-sm-offset-2
 				a.d-block(href="/")
-					img.img-fluid(src="assets/img/logo.jpg", alt="Marqúez Logotipo")
+					img.img-fluid(src="assets/img/Logo-Horizontal.png", alt="Marqúez Logotipo")
 			.col-md-6
-				ul.nav.navbar-nav
+				ul.list-inline
 					li
 						a(href="#", class=section == 'index' ? 'active' : '') HISTORIA
 					li
@@ -17,16 +17,19 @@ header.Header
 					li
 						a(href="cart.html")
 							i.fas.fa-shopping-cart
+							span (0)
 					li
 						a(href="login.html")
 							i.far.fa-user
-		.row.visible-xs.visible-sm.my-3
+	.mobil.visible-xs.visible-sm.fixed
+		.row
 			.col-xs-12
 				a.d-block(href="/")
-					img.img-fluid(src="assets/img/logo.jpg", alt="Marqúez Logotipo")
-				.mobil-items
+					img.img-fluid(src="assets/img/Logo-Horizontal.png", alt="Marqúez Logotipo")
+				.items
 					a(href="cart.html")
 						i.fas.fa-shopping-cart
+						span (0)
 					a(href="login.html")
 						i.far.fa-user
 					a(href="#")#drop

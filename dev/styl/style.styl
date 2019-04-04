@@ -2,12 +2,11 @@ $desktop_size = 1024px
 $tablet_size = 768px
 $phone_size = 320px
 
-//Colors
+// Colors
 $black = #000
 $white = #fff
 $yellow = #d8b878
 $gray = #ece9dd
-$gray-two = #ebebeb
 $gray-body = #767676
 
 @import "b4.styl"
@@ -26,9 +25,6 @@ h2
 	font-size 1.4em
 	color $yellow
 	margin-top 0
-	span
-		padding 0 10px
-		font-size 1.3em
 h3
 	font-size 1.3em
 h4
@@ -41,8 +37,9 @@ ul
 	list-style none
 i, a
 	color $white
-i
-	margin-right 10px
+	&:hover, &:focus
+		color $yellow
+		background-color transparent !important
 
 label
 	color #7a7676
@@ -56,9 +53,13 @@ input
 
 .btn
 	font-weight bold
+	border-radius 0
+	border-color transparent
 	&:hover, &:active, &:focus
 		background-color rgba($black, 0.8) !important
+		border-color transparent
 		color $white !important
+		text-decoration none
 	&-link
 		border 1px solid $black
 		color $black
@@ -71,13 +72,9 @@ input
 	@media only screen and (max-width $tablet_size)
 		flex-direction column
 
-.title
-	&-default
-		color $black
-		text-align right
-
-.space-x
-	margin 0 20px
+.w-100
+	width 100%
+	height auto
 
 .line-title
 	border-top 2px solid $yellow
@@ -90,10 +87,12 @@ input
 
 .owl-nav
 	position absolute
-	top 50%
+	top 35%
 	width 100%
 	.owl-prev, .owl-next
 		position absolute
+		&:hover
+			background-color transparent !important
 		i
 			color $gray-body
 			font-size 1.3em
@@ -101,6 +100,27 @@ input
 		right 100%
 	.owl-next
 		left 100%
+
+.sp-buy
+	top 70% !important
+	left 0
+	right 0
+	bottom 0
+	display flex
+	justify-content center
+	align-items center
+	a
+		padding 5px 40px
+
+.sp-buttons
+	position absolute
+	bottom 0
+	.sp-button
+		background-color $white
+		border 1px solid $black
+		padding 5px
+	.sp-selected-button
+		background-color $black
 
 .notify
 	padding 0.8em
@@ -127,12 +147,5 @@ input
 		color #205791
 		border-color #92cae4
 
-.sp-buttons
-	position absolute
-	bottom 0
-	.sp-button
-		background-color $white
-		border 1px solid $black
-		padding 5px
-	.sp-selected-button
-		background-color $black
+.my-10
+	margin 6rem 0

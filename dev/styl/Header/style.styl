@@ -1,28 +1,53 @@
-.Header, .header-main
-	background-color $black
-	.mobil-items
-		position absolute
-		top 0
-		right 0
-	#drop-menu
+header
+	.Header
+		ul
+			margin 2rem 0
+			li
+				padding 0 10px
+		&.main
+			background-color $black
+		&.home
+			background-color $gray
+			overflow hidden
+			.menu
+				@media only screen and (max-width 1199px)
+					text-align center
+			a,i
+				color $black
+			.logo
+				background-color $black
+				padding 10px 0
+				text-align center
+	.mobil
 		background-color $black
-		padding-left 15px
-		position absolute
-		left 0
-		right 0
-		z-index 1
-		display none
-		li
-			padding 15px 0
+		padding 1rem
+		.items
+			position absolute
+			top 15px
+			right 0
+			a
+				margin-right 15px
+				i
+					margin 0
+		#drop-menu
+			background-color $black
+			padding-left 15px
+			position absolute
+			left 0
+			right 0
+			z-index 1
+			display none
+			li
+				padding 15px 0
 
-.header-secondary
-	background-color $gray
-	.menu
-		a, i
-			color $black
-	.logo
-		background-color $black
-		text-align center
+.customanimated
+	transition 0.3s all
+	&.cshow
+		height 0
+		@media only screen and (min-width 992px)
+			height 263px
+	&.chide
+		height 0px
 
 .fixed
 	position fixed
@@ -30,3 +55,6 @@
 	left 0
 	right 0
 	z-index 2
+
+.fix-height
+	height 62.85px

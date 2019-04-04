@@ -21,14 +21,11 @@ html(lang="es")
 		script(src="assets/vendor.js")
 		script(src="assets/main.js")
 	body
-		header.header-main.d-none
-			.container-fluid
+		header
+			.Header.home.container-fluid.customanimated.cshow
 				.row.hidden-xs.hidden-sm
-					.col-md-4.col-sm-offset-2
-						a.d-block(href="/")
-							img.img-fluid(src="assets/img/Logo-Horizontal.png", alt="Marqúez Logotipo")
-					.col-md-6
-						ul.nav.navbar-nav
+					.col-lg-6.col-lg-offset-6.menu
+						ul.list-inline
 							li
 								a(href="#", class=section == 'index' ? 'active' : '') HISTORIA
 							li
@@ -40,16 +37,45 @@ html(lang="es")
 							li
 								a(href="cart.html")
 									i.fas.fa-shopping-cart
+									span (0)
 							li
 								a(href="login.html")
 									i.far.fa-user
-				.row.visible-xs.visible-sm.my-3
+				.row.logo.hidden-xs.hidden-sm
+					.col-sm-12
+						a(href="/")
+							img(src="assets/img/Logo-Vertical.png" alt="Marquéz Logotipo")
+			.Header.main.container-fluid.fixed.animated(style="opacity: 0;")
+				.row.hidden-xs.hidden-sm
+					.col-md-4.col-sm-offset-2
+						a.d-block(href="/")
+							img.img-fluid(src="assets/img/Logo-Horizontal.png", alt="Marqúez Logotipo")
+					.col-md-6
+						ul.list-inline
+							li
+								a(href="#", class=section == 'index' ? 'active' : '') HISTORIA
+							li
+								a(href="#") ESTILO
+							li
+								a(href="general-product.html") SHOP
+							li
+								a(href="contact.html") CONTACTO
+							li
+								a(href="cart.html")
+									i.fas.fa-shopping-cart
+									span (0)
+							li
+								a(href="login.html")
+									i.far.fa-user
+			.mobil.visible-xs.visible-sm.fixed
+				.row
 					.col-xs-12
 						a.d-block(href="/")
 							img.img-fluid(src="assets/img/Logo-Horizontal.png", alt="Marqúez Logotipo")
-						.mobil-items
+						.items
 							a(href="cart.html")
 								i.fas.fa-shopping-cart
+								span (0)
 							a(href="login.html")
 								i.far.fa-user
 							a(href="#")#drop
@@ -63,79 +89,57 @@ html(lang="es")
 								a(href="general-product.html") SHOP
 							li
 								a(href="contact.html") CONTACTO
-
-		header.header-secondary
-			.container-fluid.hidden-xs.hidden-sm
-				.row.menu
-					.col-sm-3.col-sm-offset-6
-						ul.nav.navbar-nav
-							li
-								a(href="#", class=section == 'index' ? 'active' : '') HISTORIA
-							li
-								a(href="#") ESTILO
-							li
-								a(href="general-product.html") SHOP
-							li
-								a(href="contact.html") CONTACTO
-							li
-								a(href="cart.html")
-									i.fas.fa-shopping-cart
-							li
-								a(href="login.html")
-									i.far.fa-user
-				.row.logo.py-5
-					.col-sm-12
-						img(src="assets/img/Logo-Vertical.png" alt="Marquéz Logotipo")
 		#home-sidebar.slider-pro
 			.sp-slides
-				// Slide 1
 				.sp-slide
 					img.sp-image(data-default='assets/img/marquez-home-banner.png', data-retina='assets/img/marquez-home-banner.png', src='assets/img/marquez-home-banner.png', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
-					.sp-layer
+					.sp-layer.sp-buy
 						a(href="").btn.btn-default COMPRAR
 				.sp-slide
 					img.sp-image(data-default='assets/img/marquez-home-banner.png', data-retina='assets/img/marquez-home-banner.png', src='assets/img/marquez-home-banner.png', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
+					.sp-layer.sp-buy
+						a(href="").btn.btn-default COMPRAR
 				.sp-slide
 					img.sp-image(data-default='assets/img/marquez-home-banner.png', data-retina='assets/img/marquez-home-banner.png', src='assets/img/marquez-home-banner.png', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
+					.sp-layer.sp-buy
+						a(href="").btn.btn-default COMPRAR
 		.Home
 			.container
 				.row
 					.col-sm-12
-						h2.title-default PRODUCTOS DESTACADOS
-							span -
+						h2.my-10 PRODUCTOS DESTACADOS -
 						.row.owl-carousel.owl-theme#products-carousel
-							.col-sm-12.product
+							.col-sm-12.prod-item
 								img(src="assets/img/marquez-home-producto-1.png" alt="Marquéz Camisa")
 								h3 Camisa Azul Botones
 								span $405.00
 								strike $590.00
-								a(href="").btn.btn-default.btn-block Comprar
-							.col-sm-12.product
+								a(href="").btn.btn-default Comprar
+							.col-sm-12.prod-item
 								img(src="assets/img/marquez-home-producto-2.png" alt="Marquéz Camisa")
 								h3 Camisa Azul Botones
 								span $405.00
 								strike $590.00
-								a(href="").btn.btn-default.btn-block Comprar
-							.col-sm-12.product
+								a(href="").btn.btn-default Comprar
+							.col-sm-12.prod-item
 								img(src="assets/img/marquez-home-producto-1.png" alt="Marquéz Camisa")
 								h3 Camisa Azul Botones
 								span $405.00
 								strike $590.00
-								a(href="").btn.btn-default.btn-block Comprar
-							.col-sm-12.product
+								a(href="").btn.btn-default Comprar
+							.col-sm-12.prod-item
 								img(src="assets/img/marquez-home-producto-2.png" alt="Marquéz Camisa")
 								h3 Camisa Azul Botones
 								span $405.00
 								strike $590.00
-								a(href="").btn.btn-default.btn-block Comprar
+								a(href="").btn.btn-default Comprar
 			.about
 				.container
-					.row
+					.row.py-5
 						.col-sm-6
-							img(src="assets/img/marquez-home-historia.png", alt="Marquéz Historia").img-responsive
+							img(src="assets/img/marquez-home-historia.png", alt="Marquéz Historia").w-100
 						.col-sm-6
-							h2.title-default MARQUÉZ
-								span -
+							h2.my-5 MARQUÉZ -
 							p
 								| Es un título nobiliario mediante el cual monarcas europeos han concedido un honor o dignidad a ciertas personas y linajes a lo largo de la historia.
 								| La marca como tal representa inmediatamente el rango elite al que pertenece. #[br]#[br]

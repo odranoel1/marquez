@@ -27,25 +27,28 @@ html(lang="es")
 			.row.Purchase.flex
 				.col-sm-6.col-md-4.col-md-offset-2.my-5
 					h2 GRACIAS POR TU COMPRA, JUAN.
-					P ¡Tu compra ya fue confirmada!
-					h2 Información del cliente
-					p Juan Pérez 
-						span juan.perez@hotmail.com
-					p Donato Guerra #1234 Centro, Guadalajara, Jal. Mex
-					p C.P. 48740 
-						span Tel: 33 1321 2561
-					h2 Método de envío
-					p Envío regular ($200)
+					p ¡Tu compra ya fue confirmada!
+					.item
+						h2 Información del cliente
+						p Juan Pérez 
+							span juan.perez@hotmail.com
+						p Donato Guerra #1234 Centro, Guadalajara, Jal. Mex
+						p C.P. 48740 
+							span Tel: 33 1321 2561
+					.item
+						h2 Método de envío
+						p Envío regular ($200)
 					h2 Método de pago
 					p Pago en Oxxo con efectivo
 					a(href="general-product.html").btn.btn-link.btn-block.my-5 VOLVER A LA TIENDA	
 					span.mr-2 ¿Necesitas ayuda?
-					a(href="contact.html") Contáctanos
-				.col-sm-6.prod
-					h2 - RESUMEN DE COMPRA
+					a(href="contact.html").contact Contáctanos
+				.col-sm-6.purchase.pt-5
+					.line-title
+					h2.mb-5 RESUMEN DE COMPRA
 					.resume
 						.image
-							img(src="assets/img/marquez-home-producto-1.png" alt="Marquéz Camisa" style="width:50%").img-responsive
+							img(src="assets/img/marquez-home-producto-1.png" alt="Marquéz Camisa").img-responsive
 							p CBA-20403
 						.description
 							h4 Camisa Azul botones
@@ -57,7 +60,7 @@ html(lang="es")
 							p $2,995.00 MX
 					.resume
 						.image
-							img(src="assets/img/marquez-home-producto-2.png" alt="Marquéz Camisa" style="width:50%").img-responsive
+							img(src="assets/img/marquez-home-producto-2.png" alt="Marquéz Camisa").img-responsive
 							p CBA-20403
 						.description
 							h4 Camisa Blanca botones
@@ -69,7 +72,7 @@ html(lang="es")
 							p $2,995.00 MX
 					.resume
 						.image
-							img(src="assets/img/marquez-home-producto-1.png" alt="Marquéz Camisa" style="width:50%").img-responsive
+							img(src="assets/img/marquez-home-producto-1.png" alt="Marquéz Camisa").img-responsive
 							p CBA-20403
 						.description
 							h4 Camisa Blanca botones
@@ -80,9 +83,10 @@ html(lang="es")
 						.price
 							p $2,995.00 MX
 					.cupon
-						p Cupón de Descuento
-						input(type="text")
-						button(type="submit").btn.btn-link USAR
+						span Cupón de Descuento
+						form
+							input(type="text")
+							button(type="submit").btn.btn-link USAR
 					table.table.total
 						thead
 							tr
@@ -93,6 +97,7 @@ html(lang="es")
 								td Envío:
 								td MX $0.00
 							tr
-								td Total:
-								td MX $8,586.00
+								td.price Total:
+								td.price
+									b MX $8,586.00
 		include parts/footer.pug

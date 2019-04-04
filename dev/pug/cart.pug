@@ -25,14 +25,15 @@ html(lang="es")
 		
 		.Cart
 			.container
+				.row.my-5
+					.col-xs-9.col-sm-6
+						.line-title
+						h2 RESUMEN DE COMPRA
+					.col-xs-3.col-sm-6.text-right
+						h4 14 Articulos
 				.row
-					.col-sm-6
-						h2 - RESUMEN DE COMPRA
-					.col-sm-6.text-right.mt-4
-						p 14 Articulos
-				.row
-					.col-sm-12
-						table.table
+					.col-sm-12.hidden-xs
+						table.table.resume
 							thead
 								tr
 									th(colspan="2") Producto
@@ -43,96 +44,163 @@ html(lang="es")
 								tr
 									td
 										img(src="assets/img/marquez-home-producto-1.png" style="width:50%").img-responsive
-										p CBA-20403
+										span CBA-20403
 									td
 										h3 Camisa Azul botones
 										p
-											| Talla: M
+											| Talla: M #[br]
 											| Color: Azul
 									td
 										p Seleccionar
 									td
-										p $649.00 MX
+										strike $649.00 MX
 									td
 										p $599.00 MX
 									td
-										p $2,995.00 MX
+										b $2,995.00 MX
+										a(href="#")
+											i.fas.fa-times
 								tr
 									td
 										img(src="assets/img/marquez-home-producto-2.png" style="width:50%").img-responsive
-										p CBA-20403
+										span CBA-20403
 									td
 										h3 Camisa Azul botones
 										p
-											| Talla: M
+											| Talla: M #[br]
 											| Color: Azul
 									td
 										p Seleccionar
 									td
-										p $649.00 MX
+										strike $649.00 MX
 									td
 										p $599.00 MX
 									td
-										p $2,995.00 MX
+										b $2,995.00 MX
+										a(href="#")
+											i.fas.fa-times
 								tr
 									td
 										img(src="assets/img/marquez-home-producto-1.png" style="width:50%").img-responsive
-										p CBA-20403
+										span CBA-20403
 									td
 										h3 Camisa Azul botones
 										p
-											| Talla: M
+											| Talla: M #[br]
 											| Color: Azul
 									td
 										p Seleccionar
 									td
-										p $649.00 MX
+										strike $649.00 MX
 									td
 										p $599.00 MX
 									td
-										p $2,995.00 MX
+										b $2,995.00 MX
+										a(href="#")
+											i.fas.fa-times
 				.row
-					.col-sm-4.col-sm-offset-8
-						table.table
-							tr
-								th RESUMEN
-								th Sub-total:
-								th MX $8,386.00
-							tr
-								td
-								td Envío:
-								td MX $200.00
-							tr
-								td TOTAL
-								td
-								td MX $8,586.00
+					.col-xs-12.visible-xs
+						table.table.resume
+							thead
+								tr
+									th Producto
+									th
+										a(href="#")
+											i.fas.fa-times
+							tbody
+								tr
+									td
+										img(src="assets/img/marquez-home-producto-1.png").img-responsive
+										span CBA-20403
+									td
+										h3 Camisa Azul botones
+										p
+											| Talla: M #[br]
+											| Color: Azul
+								tr
+									th Piezas
+									td
+										p Seleccionar
+										strike $649.00 MX
+								tr
+									th Unidad
+									td
+										p $599.00 MX
+								tr
+									th Precio
+									td
+										b $2,995.00 MX
+							thead
+								tr
+									th Producto
+									th
+										a(href="#")
+											i.fas.fa-times
+							tbody
+								tr
+									td
+										img(src="assets/img/marquez-home-producto-2.png").img-responsive
+										span CBA-20403
+									td
+										h3 Camisa Azul botones
+										p
+											| Talla: M #[br]
+											| Color: Azul
+								tr
+									th Piezas
+									td
+										p Seleccionar
+										strike $649.00 MX
+								tr
+									th Unidad
+									td
+										p $599.00 MX
+								tr
+									th Precio
+									td
+										b $2,995.00 MX
+				.row
+					.col-md-4.col-md-offset-8
+						table.table.total
+							tbody
+								tr
+									th RESUMEN
+									th Sub-total:
+									th MX $8,386.00
+								tr
+									td(colspan="2") Envío:
+									td MX $200.00
+								tr
+									td.price TOTAL
+									td.price(colspan="2") MX $8,586.00
 						a(href="shipping.html").btn.btn-link.btn-block COMPRAR
 				.row
-					.col-sm-12
-						h2 - PRODUCTOS RECOMENDADOS
+					.col-sm-12.my-5
+						.line-title
+						h2 PRODUCTOS RECOMENDADOS
 				.row
-					.col-sm-3.product
+					.col-sm-3.prod-item
 						img(src="assets/img/marquez-home-producto-1.png").img-responsive
 						h3 Camisa Azul Botones
 						span $405.00
 						strike $590.00
-						a(href="").btn.btn-default.btn-block Comprar
-					.col-sm-3.product
+						a(href="").btn.btn-default Comprar
+					.col-sm-3.prod-item
 						img(src="assets/img/marquez-home-producto-1.png").img-responsive
 						h3 Camisa Azul Botones
 						span $405.00
 						strike $590.00
-						a(href="").btn.btn-default.btn-block Comprar
-					.col-sm-3.product
+						a(href="").btn.btn-default Comprar
+					.col-sm-3.prod-item
 						img(src="assets/img/marquez-home-producto-1.png").img-responsive
 						h3 Camisa Azul Botones
 						span $405.00
 						strike $590.00
-						a(href="").btn.btn-default.btn-block Comprar
-					.col-sm-3.product
+						a(href="").btn.btn-default Comprar
+					.col-sm-3.prod-item
 						img(src="assets/img/marquez-home-producto-1.png").img-responsive
 						h3 Camisa Azul Botones
 						span $405.00
 						strike $590.00
-						a(href="").btn.btn-default.btn-block Comprar
+						a(href="").btn.btn-default Comprar
 		include parts/footer.pug

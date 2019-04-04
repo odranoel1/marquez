@@ -26,18 +26,35 @@ html(lang="es")
 		.Detail-product
 			.container
 				.row
-					.col-sm-12
+					.col-sm-11.col-sm-offset-1.my-5
 						i.fas.fa-chevron-left
 							a(href="general-product.html") REGRESAR
 				.row
-					.col-sm-8
-						a(href="assets/img/marquez-producto-1.png")
-							img(src="assets/img/marquez-home-producto-1.png" alt="Marquéz Producto").zoom
-					.col-sm-4
+					.col-sm-6.col-md-5.col-md-offset-1
+						a(href="assets/img/marquez-prod.jpg").img-zoom
+							img(src="assets/img/marquez-prod.jpg").img-detail.img-responsive
+						ul.list-inline
+							li
+								a(href="assets/img/marquez-prod.jpg").img-detail-link
+									img(src="assets/img/marquez-prod.jpg").img-responsive
+							li
+								a(href="assets/img/marquez-prod.jpg").img-detail-link
+									img(src="assets/img/marquez-prod.jpg").img-responsive
+							li
+								a(href="assets/img/marquez-prod.jpg").img-detail-link
+									img(src="assets/img/marquez-prod.jpg").img-responsive
+							li.video
+								img(src="assets/img/marquez-prod.jpg").img-responsive
+								a(type="button" data-toggle="modal" data-target="#openvideo")
+									i.far.fa-play-circle
+								.modal.fade(role="dialog")#openvideo
+									.modal-dialog
+										.modal-content
+											<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/326640783?autoplay=1&loop=1&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+					.col-sm-6.col-md-4.col-md-offset-2
 						p Camisa de botones blanca para caballero
-						h2
-							span - 
-							| CAMISA BLANCA BOTONES
+						.line-title
+						h2 CAMISA BLANCA BOTONES
 						em Manga corta camisa de botones blanca para caballero
 						.price
 							b $405 
@@ -54,19 +71,20 @@ html(lang="es")
 							p Extragrande:
 								span 200 disponibles
 						span Compartir :
-							a(href="")
-								i.fab.fa-facebook-f.social-share
+							a(href="#")
+								i.fab.fa-facebook-f
 						form.my-4
 							button(type="submit").btn.btn-link.btn-block Agregar al Carrito
 							button(type="submit").btn.btn-default.btn-block Comprar
 						.box-collapse
-							button(type="button" data-toggle="collapse" data-target="#description") CARACTERISTICA
-								i.fas.fa-chevron-down
-							#description.collapse
+							a(type="button" data-toggle="collapse" data-target="#description") CARACTERISTICA
+								i.fas.fa-chevron-down.ml-3
+							#description.collapse.in
 								| Camisa para caballero de botones color blanca, manga larga, 100% algodón, cuello americano,
 								| puño fino con ajuste de botón, corte recto con ajuste en los hombros, ajuste clásico con cintura
 								| ligeramente entallada para una buena libertad de movimientos y una silueta elegante y cómoda.
-							button(type="button" data-toggle="collapse" data-target="#guide") GUÍA DE TALLA
-								i.fas.fa-chevron-down
-							img(src="" alt="Guía de Tallas Camisa Caballero")#guide.collapse
+							a(type="button" data-toggle="collapse" data-target="#guide") GUÍA DE TALLA
+								i.fas.fa-chevron-down.ml-3
+							#guide.collapse.in
+								img(src="assets/img/marquez-tallas.jpg" alt="Guía de Tallas Camisa Caballero").img-responsive
 		include parts/footer.pug

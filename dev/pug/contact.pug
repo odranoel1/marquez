@@ -24,8 +24,8 @@ html(lang="es")
 		include parts/header.pug
 		
 		.container-fluid
-			.row.Contact
-				.col-sm-4.responsive
+			.row.Contact.flex
+				.col-sm-6.col-md-4.col-md-offset-2.responsive
 					.line-title
 					h2 CONTACTO
 					.content
@@ -33,10 +33,13 @@ html(lang="es")
 						p
 							| Col. Arcos Vallarta, C.P. 44130 #[br]
 							| Guadalajara, Jalico. México
-						i.far.fa-envelope
-							a(href="") contacto@estilomarquez.com
-						i.fas.fa-phone
-							a(href="") (33) 1427 9931
-				.col-sm-6
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.9447076485267!2d-103.38639268470192!3d20.67182838619282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae72fc5c7ee9%3A0xd38d5fe5766ea25e!2sCalle+Emilio+Castelar+164%2C+Arcos+Vallarta%2C+44130+Guadalajara%2C+Jal.!5e0!3m2!1ses-419!2smx!4v1553204320463" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						ul
+							li
+								i.far.fa-envelope
+									a(href='mailto:contacto@estilomarquez.com') contacto@estilomarquez.com
+							li
+								i.fas.fa-phone
+									a(href='tel:33 1427 9931') (33) 1427 9931
+				.col-sm-6.px-0
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.9447076485267!2d-103.38639268470192!3d20.67182838619282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae72fc5c7ee9%3A0xd38d5fe5766ea25e!2sCalle+Emilio+Castelar+164%2C+Arcos+Vallarta%2C+44130+Guadalajara%2C+Jal.!5e0!3m2!1ses-419!2smx!4v1553204320463" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 		include parts/footer.pug

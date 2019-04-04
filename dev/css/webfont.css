@@ -16,7 +16,7 @@
 }
 
 @font-face {
-  font-family: 'Roboto-BoldCondensed';
+  font-family: 'Roboto-Condensed-Bold';
   src: url('fonts/Roboto-BoldCondensed.woff2') format('woff2'),
        url('fonts/Roboto-BoldCondensed.woff') format('woff');
   font-weight: normal;

@@ -6,3 +6,4 @@ public/assets/*
 public/assets/*
 public/*.html
 .DS_Store
+package-lock.json

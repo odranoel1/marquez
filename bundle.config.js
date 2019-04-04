@@ -25,6 +25,7 @@ module.exports = {
         './bower_components/owl.carousel/dist/assets/owl.carousel.css',
         './bower_components/owl.carousel/dist/assets/owl.theme.default.css',
         './bower_components/magnify/dist/css/magnify.css',
+        './bower_components/animate.css/animate.css',
         // './bower_components/pnotify/dist/pnotify.css',
         // './bower_components/pnotify/dist/pnotify.brighttheme.css',
         // './bower_components/iCheck/skins/minimal/minimal.css',

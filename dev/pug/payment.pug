@@ -26,22 +26,24 @@ html(lang="es")
 		.container-fluid
 			.row.Payment.flex
 				.col-sm-6.col-md-4.col-md-offset-2.my-5
-					h2 - INFORMACIÓN DE CONTACTO
-					.item
+					.line-title
+					h2 INFORMACIÓN DE CONTACTO
+					.item.mt-5
 						span Correo 
 						a(href="") ejemplo@gmail.com #[br]
-					.item
+					.item.mb-5
 						span Dirección 
 						a(href="") Donato Guerra #1234, Centro, Guadalajara, Jalisco. México #[br]
 						span -Recoger en tienda-
-					h2 - MÉTODO DE PAGO
+					.line-title
+					h2 MÉTODO DE PAGO
 					form
 						.form-group.item
 							.radio
 								label
 									input(type="radio")
 									| Pago con efectivo en oxxo
-								img(src="assets/img/marquez-formaspago-oxxo.png" alt="Pago en efectivo Oxxo").img-responsive
+								img(src="assets/img/marquez-formaspago-oxxo.jpg" alt="Pago en efectivo Oxxo").img-responsive
 							p.text-center
 								| Gracias por realizar tu orden. En breve recibirás un correo electrónico con tu referencia
 								| numérica la cual deberás presentar en cualquier sucursal Oxxo del país para realizar tu pago.
@@ -51,19 +53,20 @@ html(lang="es")
 								label
 									input(type="radio")
 									| Pago con Paypal.
-								img(src="assets/img/marquez-formaspago-paypal.png" alt="Pago con Paypal").img-responsive
+								img(src="assets/img/marquez-formaspago-paypal.jpg" alt="Pago con Paypal").img-responsive
 						.form-group.item
 							.radio
 								label
 									input(type="radio")
 									| Depósito bancario o transferencia
-								img(src="assets/img/marquez-formaspago-banbajio.png" alt="Depósito bancario o transferencia").img-responsive
-					a(href="purchase.html").btn.btn-link.btn-block FINALIZAR PEDIDO
-				.col-sm-6.prod
-					h2 - RESUMEN DE COMPRA
+								img(src="assets/img/marquez-formaspago-banbajio.jpg" alt="Depósito bancario o transferencia").img-responsive
+						button(type="submit").btn.btn-link.btn-block FINALIZAR PEDIDO
+				.col-sm-6.purchase.pt-5
+					.line-title
+					h2.mb-5 RESUMEN DE COMPRA
 					.resume
 						.image
-							img(src="assets/img/marquez-home-producto-1.png" alt="Marquéz Camisa" style="width:50%").img-responsive
+							img(src="assets/img/marquez-home-producto-1.png" alt="Marquéz Camisa").img-responsive
 							p CBA-20403
 						.description
 							h4 Camisa Azul botones
@@ -75,7 +78,7 @@ html(lang="es")
 							p $2,995.00 MX
 					.resume
 						.image
-							img(src="assets/img/marquez-home-producto-2.png" alt="Marquéz Camisa" style="width:50%").img-responsive
+							img(src="assets/img/marquez-home-producto-2.png" alt="Marquéz Camisa").img-responsive
 							p CBA-20403
 						.description
 							h4 Camisa Blanca botones
@@ -87,7 +90,7 @@ html(lang="es")
 							p $2,995.00 MX
 					.resume
 						.image
-							img(src="assets/img/marquez-home-producto-1.png" alt="Marquéz Camisa" style="width:50%").img-responsive
+							img(src="assets/img/marquez-home-producto-1.png" alt="Marquéz Camisa").img-responsive
 							p CBA-20403
 						.description
 							h4 Camisa Blanca botones
@@ -98,9 +101,10 @@ html(lang="es")
 						.price
 							p $2,995.00 MX
 					.cupon
-						p Cupón de Descuento
-						input(type="text")
-						button(type="submit").btn.btn-link USAR
+						span Cupón de Descuento
+						form
+							input(type="text")
+							button(type="submit").btn.btn-link USAR
 					table.table.total
 						thead
 							tr
@@ -111,6 +115,7 @@ html(lang="es")
 								td Envío:
 								td MX $0.00
 							tr
-								td Total:
-								td MX $8,586.00
+								td.price Total:
+								td.price
+									b MX $8,586.00
 		include parts/footer.pug
